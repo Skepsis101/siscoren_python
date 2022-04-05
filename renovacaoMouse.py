@@ -1,17 +1,14 @@
-
-
 # RENOVAÇÃO MANUAL COM CLIQUES DO MOUSE E TECLADO
-
 # importe a biblioteca para interface grafica
 from tkinter import *
-
-
 from pickletools import pytuple
 from re import sub
 import pyautogui
 import time
 import sys
 
+
+# defina a funcao renovacao
 def renovacao():
 
     pyautogui.alert("Renovação iniciada: não mexa no mouse!")
@@ -28,8 +25,7 @@ def renovacao():
     # aperte ENTER 3 vezes (rapidamente)
     pyautogui.press('enter')
     pyautogui.press('enter')
-    pyautogui.press('enter')
-    time.sleep(0.5)
+    time.sleep(2)
 
     # clicar na aba REQUERIMENTO
     pyautogui.click(556, 395)
@@ -65,7 +61,6 @@ def renovacao():
     pyautogui.scroll(-1000)
     time.sleep(0.5)
     pyautogui.click(703, 590)
-
 
     # rolar 3 vezes e selecionar IDENTIDADE e CÉDULA
     pyautogui.scroll(-1000)
@@ -162,11 +157,10 @@ def renovacao():
     pyautogui.alert("Renovação concluída! Sistema liberado.")
 
 
-
 # crie a janela de interface grafica
 janela = Tk()
 janela.geometry("200x200")
-janela.title("Easy SISCOREN")
+janela.title("DRC Service")
 
 texto_orientacao = Label(janela, text="Selecione o serviço")
 texto_orientacao.grid(column=0, row=0, padx=10, pady=10)
