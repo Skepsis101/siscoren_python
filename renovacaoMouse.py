@@ -25,7 +25,7 @@ def renovacao():
     # aperte ENTER 3 vezes (rapidamente)
     pyautogui.press('enter')
     pyautogui.press('enter')
-    time.sleep(2)
+    time.sleep(3)
 
     # clicar na aba REQUERIMENTO
     pyautogui.click(556, 395)
